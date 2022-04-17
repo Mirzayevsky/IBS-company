@@ -1,0 +1,170 @@
+/* regular styles */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.container{
+    height: 100%;
+    width: 1250px;
+    margin: auto;
+}
+.menu{
+    color: #fff;
+    height: 20px;
+    width: 70px;
+    background-color: #000;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+    display: none;
+}
+.menu:hover{
+ cursor: pointer;
+ background-color: #ffbf2b;
+}
+
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(230, 225, 225);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+@media only screen and (max-width:1250px) {
+    .container{
+        width: 1200px;
+        background-color: rgb(229, 255, 0);
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:1200px) {
+    .container{
+        width: 992px;
+        background-color: rgb(87, 6, 90);
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .container{
+        width: 768px;
+        background-color: rgb(0, 173, 0);
+    }
+    nav{
+        height: 40px;
+    }
+    .list-wrapper{
+        margin-right: 10px;
+    }
+    .list-wrapper .list{
+        margin:  0  8px;
+     }
+     .list-wrapper,.login-btn{
+         display: none !important;
+     }
+
+     .menu{
+         height: 25px;
+         width: 100px;
+         display: block;
+         border-radius: 10px;
+         
+     }
+
+}
+
+@media only screen and (max-width:768px) {
+    .container{
+        width: 600px;
+        background-color: rgb(0, 173, 0);
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .container{
+        width: 90%;
+        background-color: rgb(14, 211, 201);
+    }
+    
+}
+
+
+@media only screen and (min-width:1252px) {
+    .container{
+        
+        width: 90%;
+        background-color: red;
+    }
+    .navbar-brand a{
+        font-size: 40px;
+    }
+    .list-wrapper{
+        padding: 60px 0;
+    }
+    a{
+        font-size: 21px;
+
+    }
+    .login-btn{
+        height: 40px;
+        width: 210px;
+    }
+
+    
+}
+
+.navbar-brand{
+    font-size: 24px;
+    font-weight: 600;
+
+}
+.navbar-brand a{
+    color: #ffbf2b;
+
+}
+.list-wrapper{
+    display: flex;
+    margin-left: auto;
+    margin-right: 80px;
+
+}
+.list-wrapper .list{
+ margin:  0  13px;
+}
+.list .link{
+
+}
+.list .link:hover{
+    color: #ffbf2b;
+}
+
+.login-btn{
+    color: #fff;
+    height: 35px;
+    width: 120px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    outline: none;
+    background-color: #000;
+}
+.login-btn:hover{
+    cursor: pointer;
+    background-color: #ffbf2b;
+}

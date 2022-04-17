@@ -1,0 +1,95 @@
+
+
+/* transition delay bu  harakat qachon boshlanishini beradi va kechikishini */
+/* transition: width 3s; */
+/* transition-timing-function: cubic-bezier(.25,0.1,0.19,1.46); */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    text-shadow: 5px 5px 2px rgb(134, 37, 224);
+    text-align: justify;
+}
+.container{
+    height: 120vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
+
+.card{
+    height: 220px;
+    width: 220px;
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px auto;
+    text-align: center;
+    /* transition-duration: .5s;
+     /* transition-delay: 1s; */
+    /* box-shadow: 40px -30px 2px rgba(233, 212, 20, 0.973); */
+    /* transform: translate(200px); */
+    /* transform: translateX(-400px); */
+    /* transition-delay: 2s; */
+    transition: .5s;
+    position: relative;
+
+
+
+
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+.ids{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 30%;
+    transform: rotate(50deg);
+    right: -10px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card:hover{
+    /* transform: translateX(200px);  */
+    /* transition-timing-function: cubic-bezier(0.4, 1.02, 0.18, 0.34);    */
+    /* transform: rotate(360deg); */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(1.5); */
+    /* transform: skew(10deg,20deg); */
+    /* transform: skewX(20deg); */
+    /* transform: skewY(30deg); */
+    /* transform: translate(150px); */
+    /*transform: rotate(360deg);*/
+    /*transform: translate(100px);*/
+    /* background-color: blueviolet; */
+    /*background-image: linear-gradient(90deg #000,#fff,#ffbf2b);*/
+    /* transform: matrix(3,3,4); */
+    /*background-color: blue;*/
+    background-color: gray;
+   
+}
+.img-wrapper{
+    height: 100px;
+    width: 100px;
+}
+.card:hover .ids{
+    background-color: gray;
+}
+.card:hover .img-wrapper{
+    /* height: 80%;
+    width: 80%; */
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
+}
+
