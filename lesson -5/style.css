@@ -1,0 +1,74 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-image: linear-gradient(45deg,#c91e1e,rgb(31, 153, 201),#ffbf2b); */
+    /* background-image: linear-gradient(103deg,red,black,blue); */
+    /* background-image: linear-gradient(103deg,rgb(245, 241, 7),rgb(187, 174, 174),rgb(16, 16, 187)); */
+    /* background: rgb(231,4,4); */
+    /* background: linear-gradient(180deg, rgba(231,4,4,1) 0%, rgba(240,233,12,0.6026785714285714) 50%, rgba(245,16,201,0.9023984593837535) 99%); */
+    /* background: rgb(231,4,4); */
+/* background: linear-gradient(100deg, rgba(231,4,4,1) 20%, rgba(20,20,22) 50%, rgba(75,14,217,0.9023984593837535) 70%); */
+/* background-color: #21D4FD;
+background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
+/* background-color: #FAD961;
+background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%); */
+
+/* background: rgb(231,4,4); */
+/* background: linear-gradient(100deg, rgba(231,4,4,1) 18%, rgba(20,20,22,0.3533788515406162) 35%, rgba(14,182,217,0.9023984593837535) 60%, rgba(158,9,103,1) 75%, rgba(231,4,4,1) 93%); */
+background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.inner-form{
+    display: flex;
+}
+input{
+    /* width: 100%; */
+    /* width: auto; */
+    background-color: aqua;
+    /* display: block; */
+
+}
+input:nth-child(2){
+background-color: red;
+}
+
+input:nth-child(3){
+    background-color: rgb(0, 0, 0);
+    }
+    
+
+.container{
+    height: 100vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+    /* background-color: rgb(0, 0, 0,0.9); */
+    /* background-color: #ffbf2b; */
+    /* opacity: 1; */
+    /* opacity: 50%; */
+    background-image: url("./assets/imgs/matteo-catanese-PI8Hk-3ZcCU-unsplash\ \(1\).jpg");
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-attachment: scroll; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-size: 300px 200px; */
+    background-size: 70% 70%;
+    /* background-position: 200px 10px; */
+    /* background-position: center; */
+    /* background-position: left; */
+    /* background-position: right; */
+    /* background-position: right bottom; */
+    /* background-position: right top; */
+    background-position: center;
+
+
+
+
+
+
+}
