@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import "./global";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// @mixin mainStyles {
+//     color: rgb(243, 87, 31);
+//     font-family: 'Poppins', sans-serif;
+//     background-color: #000;
+// }
+
+@mixin  main( $backgroundColor,$color,$font-family,$fonsize) {
+    background-color: $backgroundColor;
+    color: $color;
+    font-family: $font-family;
+    font-size: $fonsize;
+}
+
+// .button-basic{
+//     font-size: 18px;
+//     padding: 12px 25px;
+//     color: rebeccapurple;
+//     font-family: 'Poppins', sans-serif;
+//     background-color: #000;
+//     border: 0;
+//     outline: 0;
+// }
+a{
+    &::selection{
+        background-color: #ffbf2b !important;
+    }
+}
+
+body{
+    .container{
+        width: 1200px;
+        margin: auto;
+        // @include mainStyles
+        @include main(rgb(23, 8, 151), "", 'Poppins',33px );
+
+        p{
+            font-size: 24px;
+           
+        }
+        .get-started {
+            // @include mainStyles;
+            // @extend .button-basic;
+            
+        }
+
+        .submit-btn{
+            // @extend .button-basic;
+            @include main(green,red , "","" )
+        }
+        
+
+    }
+
+}
+
