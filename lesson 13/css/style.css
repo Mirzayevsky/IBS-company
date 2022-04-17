@@ -1,0 +1,261 @@
+/* main style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+
+}
+.sidebar-btn{
+    display: none;
+
+}
+.cover{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.container{
+    height: 100%;
+    width: 1200px;
+    margin: auto;
+}
+#navbar{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+}
+#navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .logo{
+    color: gray;
+    font-size: 23px;
+    font-weight: 600;
+}
+.container .link-wrapper{
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+
+}
+.container .link-wrapper .list{
+
+}
+.container .link-wrapper .list .link{
+    font-size: 17px;
+    margin: 0 10px;
+}
+.social-media-icons{
+  display: flex;
+}
+
+.social-media-icons .social-link{
+    height: 25px;
+    width: 25px;
+    margin: 0 4px;
+}
+.social-media-icons .social-link:hover{
+   color: lightblue;
+}
+.social-media-icons .social-link .icon{
+    height: 100%;
+    width: 100%;
+}
+
+#header{
+width: 100%;
+background-image: url("../assets/img/hero-bg.jpg");
+background-position: center;
+position: relative;
+padding: 160px 0;
+
+
+}
+
+#header .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#header .container .text-box{
+    text-align: center;
+    z-index: 1;
+    
+}
+#header .container .text-box .title{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    position: relative;
+}
+#header .container .text-box .title:before{
+    content: "";
+    height: 5px;
+    width: 140px;
+    position: absolute;
+    background-color: teal;
+    bottom: 0;
+    right: 17%;
+
+}
+
+#header .container .text-box .subtitle{
+    color: #fffc;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 0; 
+}
+#header .container .text-box .main-btn{
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    background-color: teal;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+
+}
+
+#section-one{
+    height: 100vh;
+    width: 100%;
+
+}
+#section-one .container{
+    
+}
+#section-one .container .text-box{
+    text-align: center;
+}
+#section-one .container .text-box .title{
+    color: #222222;
+    font-size: 32px;
+    font-weight: 600;
+}
+#section-one .container .text-box .section-one-before{
+    height: 3px;
+    width: 160px;
+    background-color: rgb(202, 199, 199);
+    position: relative;
+    margin: 10px auto;
+}
+#section-one .container .text-box  .section-one-before:after{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 70px;
+    background-color: teal;
+    right: 24%;
+
+
+    
+}
+
+#section-one .container .text-box .subtitle{
+    color: gray;
+    font-size: 18px;
+    font-weight: 500;
+}
+#section-one .card-wrapper{
+
+}
+#section-one .card-wrapper .card{
+    
+}
+#section-one .card-icon-wrapper{
+    
+}
+#section-one .card-icon-wrapper .icon{
+    
+}
+#section-one .card-wrapper .title{
+    
+}
+#section-one .card-wrapper .text{
+    
+}
+
+
+/* sidebar content */
+
+.sidebar-container{
+    height: 100vh;
+    width: 50%;
+    background-color: rgb(201, 197, 9);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    display: none;
+}
+.btn-close{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    height: 40px;
+    width: 50px;
+    cursor: pointer;
+}
+
+/* media query  */
+@media only screen and (min-width:1200px){
+    .container{
+        width: 90%;
+        background-color: teal;
+    }
+}
+@media only screen and (max-width:1200px){
+    .container{
+        width: 1000px;
+    }
+    .container .link-wrapper{
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .container{
+        width: 90%;
+    }
+    .container .link-wrapper{
+        display: none;
+    }
+    .social-media-icons{
+        display: none;
+    }
+    .sidebar-btn{
+        display: block;
+        height: 30px;
+        width: 50px;
+        border: 0;
+        outline: none;
+        background: transparent;
+        cursor: pointer;
+       
+    }
+    .sidebar-btn img{
+        height: 100%;
+        width: 100%;
+    }
+    .sidebar-container{
+        display: block;
+    }
+
+}

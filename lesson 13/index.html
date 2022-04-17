@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>first website</title>
+</head>
+<style>
+    .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+</style>
+<body>
+
+<!-- Start Navigation content -->
+    <nav id="navbar" >
+       <div class="main-container">
+           
+           <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+
+
+        <div class="container">
+            <a href="" class="logo">LUMIA</a>
+            <ul class="link-wrapper">
+                <li class="list">
+                    <a href="" class="link">Home</a>
+                </li>
+                <li class="list">
+                    <a href="#section-one" class="link">about</a>
+                </li>
+                <li class="list">
+                    <a href="" class="link">Services</a>
+                </li>
+                <li class="list">
+                    <a href="" class="link">Portfolio</a>
+                </li>
+                <li class="list">
+                    <a href="" class="link">Testimonials</a>
+                </li>
+                <li class="list">
+                    <a href="" class="link">Drop Down</a>
+                </li>
+                <li class="list">
+                    <a href="" class="link"> Contact</a>
+                </li>
+            </ul>
+            <div class="social-media-icons">
+                    <a  class="social-link" href="#">
+                        <img class="icon" src="./assets/social icons/twitter.png" alt="">
+                    </a>
+                    <a class="social-link" href="">
+                        <img class="icon" src="./assets/social icons/facebook.png" alt="">
+                    </a>
+                    <a  class="social-link" href="#">
+                        <img class="icon" src="./assets/social icons/instagram (1).png" alt="">
+                    </a>
+                    <a  class="social-link" href="#">
+                        <img class="icon" src="./assets/social icons/linkedin.png" alt="">
+                    </a>
+            </div>
+            
+        
+    </div>
+       </div>
+    </nav>
+    <!-- header content -->
+<header id="header">
+    <div class="cover"></div>
+    <div class="container">
+        <div class="text-box">
+            <div class="title">Welcome to Lumia</div>
+            <div class="subtitle">We are team of talented designers making websites with Bootstrap</div>
+            <button class="main-btn"> GET STARTED</button>
+        </div>
+    </div>
+</header>
+<section id="section-one">
+    <div class="container">
+
+        <div class="text-box">
+            <div class="title"> What We Do </div>
+            <div class="section-one-before"></div>
+            <div class="subtitle">
+                Magnam dolores commodi suscipit consequatur ex aliquid
+            </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="card-icon-wraper">
+                    <img src="" alt="" class="icon">
+                </div>
+                <div class="title"></div>
+                <div class="text">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</div>
+            </div>
+        </div>
+      
+    </div>
+</section>
+   
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+</body>
+</html>
