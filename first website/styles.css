@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+li{
+    list-style:none;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("./assets//imgs/pop-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.inner-container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.text-box{
+    width: 50%;
+
+}
+.card{
+    height: 150px;
+    width: 150px;
+    border: 2px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.title{
+    text-align: right;
+
+}
+.out-before{
+ height: 15px;   
+ width: 100%;
+ background-color: #fff;
+ margin: 20px 0;
+ position: relative;
+}
+.out-before::before{
+    content: "";
+    height: 30px;
+    width: 150px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: -50%;
+
+}
+.text{
+    font-size: 24px;
+    font-family: sans-serif;
+    line-height: 40px;
+    text-align: center;
+
+}

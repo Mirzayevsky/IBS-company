@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Redressed;
+    src: url(./fonts/Redressed-Regular.ttf);
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffbf2b;
+
+}
+
+
+.container{
+ height: 100vh;
+ width: 80%;
+ margin: auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.card{
+    height:fit-content;
+    width: 24%;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255) ;
+
+}
+
+
+
+
+
+.img-container{
+  height: 160px;
+  width: 160px;
+  margin: auto;
+}
+
+.img-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+}
+.title{
+    color: #000;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    /* text-align: right; */
+    /* text-align: left; */
+}
+
+.react{
+    /* text-decoration: overline; */
+    /* text-decoration: line-through; */
+    /* text-decoration: underline; */
+
+}
+ 
+.react a {
+    text-decoration: none;
+}
+
+.text{
+    color: rgb(4, 58, 158);
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Redressed', cursive;
+    text-align: justify;
+    /* text-transform: capitalize; */
+    /* text-transform: uppercase; */
+    text-transform: lowercase;
+
+}
+
+.extra-text{
+  color: rgb(197, 28, 9);
+  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
+  padding: 40px;
+
+}
+.extra-text .inner-text{
+  color: rgb(0, 123, 255);
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  margin: 50px 0;
+}

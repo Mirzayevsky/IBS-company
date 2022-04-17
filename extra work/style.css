@@ -1,0 +1,58 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.main-header{
+    width: 100%;
+    background-color: #ffbf2b;
+}
+.container{
+    width: 80%;
+    margin: auto;
+
+}
+.nav-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo{
+font-size: 24px;
+font-weight: 600;
+letter-spacing: 2px;
+}
+.nav-ul {
+    display: flex;
+
+}
+.nav-ul li{
+    font-size: 18px;
+    margin: 0 30px;
+
+}
+.nav-ul li a{
+    
+}
+.button-wrapper{
+
+}
+.header-btn{
+color: #fff;
+margin: 0 10px;
+padding: 8px 20px;
+border: 1px solid grey;
+border-radius: 3px;
+outline: none;
+background-color: #000;
+
+}
